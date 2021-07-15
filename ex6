@@ -1,0 +1,16 @@
+var duracaoSegundos = parseInt(prompt("Qual o tempo em segundos de duração desse evento? "));
+
+if(isNaN(duracaoSegundos)) {
+  console.log("\nPor favor utilize apenas números!" );
+
+} else if (duracaoSegundos < 0) {
+  console.log("\nPor favor utilize apenas números positivos!" );
+  
+} else {
+  var horas = Math.trunc(duracaoSegundos/3600);
+  var minutos = Math.trunc((duracaoSegundos/60) - (horas*60))
+  var segundos = Math.trunc(duracaoSegundos - (horas*3600+minutos*60))
+
+  console.log("A duração desse evento será de "+ horas + ":" + minutos +":" + segundos +"!");
+  
+}
