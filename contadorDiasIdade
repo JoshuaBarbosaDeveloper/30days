@@ -1,0 +1,6 @@
+var idadeAno = prompt("Quantos anos você tem? ");
+var idadeMes = prompt("E quantos meses? ");
+var idadeDia = prompt("Por fim, e os dias? ");
+var diasTotal = (((idadeAno/12) + idadeMes) * 30) + idadeDia;
+
+console.log("Você já viveu " + diasTotal +"dias!" );
