@@ -1,6 +1,16 @@
-var idadeAno = prompt("Quantos anos você tem? ");
-var idadeMes = prompt("E quantos meses? ");
-var idadeDia = prompt("Por fim, e os dias? ");
-var diasTotal = (((idadeAno*12) + idadeMes) * 30) + idadeDia;
+var idadeAno = parseInt(prompt("Quantos anos você tem? "));
+var idadeMes = parseInt(prompt("E quantos meses? "));
+var idadeDia = parseInt(prompt("Por fim, e os dias? "));
 
-console.log("Você já viveu " + diasTotal +"dias!" );
+if(isNaN(idadeAno) || isNaN(idadeMes) || isNaN(idadeDia)){
+  console.log("\nPor favor utilize apenas números!" );
+
+} else if (idadeAno < 0 || idadeMes < 0 || idadeDia < 0){
+  console.log("\nPor favor utilize apenas números positivos! :D" );
+  
+} else {
+  var diasTotal = (((idadeAno*12) + idadeMes) * 30) + idadeDia;
+  console.log("\nVocê já viveu aproximadamente " + diasTotal +" dias!" );
+}
+
+
