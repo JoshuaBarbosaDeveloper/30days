@@ -1,0 +1,13 @@
+var px1 = parseInt(prompt("Primero, digite o valor de x do ponto 1: "));
+var py1 = parseInt(prompt("Agora o valor de y: "));
+var px2 = parseInt(prompt("Digite o valor de x do ponto 2: "));
+var py2 = parseInt(prompt("Por fim, o valor de y desse ponto: "));
+
+if(isNaN(px1) || isNaN(py1) || isNaN(px2) || isNaN(py2)) {
+  console.log("\nPor favor utilize apenas números!" );
+
+} else {
+  var d = Math.sqrt(Math.pow((px2-px1), 2)) + (Math.pow((py2+py1), 2));
+
+  console.log("\nO resuldado dessa operação é de: " + d);
+}
