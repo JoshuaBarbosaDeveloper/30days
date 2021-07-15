@@ -1,0 +1,17 @@
+
+var idadeDia = parseInt(prompt("Quantos dias você já viveu? "));
+
+if(isNaN(idadeDia)){
+  console.log("\nPor favor utilize apenas números!" );
+
+} else if (idadeDia < 0){
+  console.log("\nPor favor utilize apenas números positivos! :D" );
+  
+} else {
+  var ano = Math.trunc((idadeDia/30)/12);
+  var meses = Math.trunc((idadeDia/30)-(ano*12));
+  var dia = Math.trunc(idadeDia - (ano*12*30 + (meses*30)));
+  
+  console.log("\nVocê está vivo desde aproximadamente " + ano + " anos, " + meses + " meses e " + dia + " dias!");
+  
+}
