@@ -7,7 +7,7 @@ if(isNaN(px1) || isNaN(py1) || isNaN(px2) || isNaN(py2)) {
   console.log("\nPor favor utilize apenas números!" );
 
 } else {
-  var d = Math.sqrt(Math.pow((px2-px1), 2)) + (Math.pow((py2+py1), 2));
+  var d = Math.sqrt((Math.pow((px2-px1), 2)) + (Math.pow((py2-py1), 2)));
 
   console.log("\nO resuldado dessa operação é de: " + d);
 }
