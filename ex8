@@ -1,0 +1,19 @@
+var a = parseInt(prompt("Coeficiente A: "));
+var b = parseInt(prompt("Coeficiente B: "));
+var c = parseInt(prompt("Coeficiente C: "));
+var d = parseInt(prompt("Coeficiente D: "));
+var e = parseInt(prompt("Coeficiente E: "));
+var f = parseInt(prompt("Coeficiente F: "));
+
+if(isNaN(a) || isNaN(b) || isNaN(c) || isNaN(d) || isNaN(e) || isNaN(f)) {
+  console.log("\nPor favor utilize apenas números!" );
+
+} else {
+  var x = (((c*e)-(b*f))/((a*e)-(b*d)));
+  var y = (((a*f)-(c*d))/((a*e)-(b*d)));
+
+  console.log("\n---R E S U L T A D O---");
+  console.log("\nX = " + x);
+  console.log("\Y = " + y);
+  
+}
