@@ -1,0 +1,12 @@
+var a = parseInt(prompt("Valor 1: "));
+var b = parseInt(prompt("Valor 2: "));
+
+
+if(isNaN(a) || isNaN(b)) {
+  console.log("\nPor favor utilize apenas números!" );
+  } else {
+    if ()
+    console.log("\nO maior número é o " +Math.max.apply(null, numeros));
+  }
+
+   
