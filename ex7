@@ -1,0 +1,17 @@
+var custoFabrica = parseInt(prompt("Qual o custo de fábrica desse veículo? "));
+
+if(isNaN(custoFabrica)) {
+  console.log("\nPor favor utilize apenas números!" );
+
+} else if (custoFabrica < 0) {
+  console.log("\nPor favor utilize apenas números positivos!" );
+  
+} else {
+  var distribuidor = (28*custoFabrica/100);
+  var impostos = (45*custoFabrica/100);
+  var precoTotal = custoFabrica + distribuidor + impostos;
+  
+
+  console.log("\nO preço total desse veículo é de: " + precoTotal);
+  
+}
