@@ -1,0 +1,23 @@
+var a = parseInt(prompt("Nota 1: "));
+var b = parseInt(prompt("Nota 2: "));
+var c = parseInt(prompt("Nota 3: "));
+
+
+if(isNaN(a) || isNaN(b) || isNaN(c)) {
+  console.log("\nPor favor utilize apenas números!" );
+
+} else if ( a < 0 || b < 0 || c < 0 ){
+  console.log("\nPor favor utilize apenas números positivos!" );
+ 
+} else {
+   var resultado = (a+b+c)/3;
+  console.log("\n---R E S U L T A D O---");
+  console.log("Sua nota: " + resultado);
+  
+  if (resultado >= 60){
+    console.log("Situação: APROVADO(A)")
+    
+  } else {
+    console.log("Situação: REPROVADO(A)")  
+  }
+}
