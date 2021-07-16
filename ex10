@@ -1,0 +1,13 @@
+var numeros = [];
+var a = numeros.push(parseInt(prompt("Valor 1: ")));
+var b = numeros.push(parseInt(prompt("Valor 2: ")));
+var c = numeros.push(parseInt(prompt("Valor 3: ")));
+
+
+if(isNaN(numeros[0]) || isNaN(numeros[1]) || isNaN(numeros[2])) {
+  console.log("\nPor favor utilize apenas números!" );
+  } else{
+    console.log("\nO maior número é o " +Math.max.apply(null, numeros));
+  }
+
+   
